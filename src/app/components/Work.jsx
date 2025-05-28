@@ -5,17 +5,17 @@ const Work = () => {
     return (
         <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
             <h4 className="text-center text-lg mb-2">My Portfolio</h4>
-            <h2 className="text-center text-5xl">My latest Work</h2>
+            <h2 className="text-center text-4xl md:text-5xl">My latest Work</h2>
             <p className="max-w-2xl mx-auto text-center mt-5 mb-12">Welcome to my Development Portfolio. Explore a collection of project's showcasing my experince in Frontend Development.</p>
 
-            <div className="grid grid-cols-4 gap-5 my-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
                 {
                     workData.map((project, index) => (
                         <div key={index} className="relative aspect-square bg-no-repeat bg-cover bg-center rounded-lg cursor-pointer group" style={{ backgroundImage: `url(${project.bgImage})` }}>
-                            <div className="absolute bottom-5 bg-white w-10/12 rounded-md translate-x-1/2 px-5 py-2 duration-500 flex justify-between items-center group-hover:bottom-7">
+                            <div className="absolute bottom-5 right-1/2 bg-white w-10/12 rounded-md translate-x-1/2 px-3 py-2 duration-500 flex justify-between items-center group-hover:bottom-7">
                                 <div>
-                                    <h2 className="font-semibold">{project.title}</h2>
-                                    <p className="textsm text-gray-700">{project.description}</p>
+                                    <h2 className="text-md whitespace-nowrap font-semibold">{project.title}</h2>
+                                    <p className="text-sm text-gray-700">{project.description}</p>
                                 </div>
                                 <div className="w-9 border border-black rounded-full aspect-square flex justify-center items-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition ">
                                     <Image src={assets.send_icon} alt="Send icon" className="w-5" />

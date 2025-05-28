@@ -3,12 +3,12 @@ import { assets, serviceData } from "../assets/assets"
 
 const Services = () => {
     return (
-        <div id="service" className="w-full px-[12%] py-10 scroll-mt-20 mt-10">
+        <div id="service" className="w-full px-[12%] py-10 scroll-mt-20">
             <h4 className="text-center mb-2 text-lg">What I offer</h4>
-            <h2 className="text-center text-5xl">My Services</h2>
+            <h2 className="text-center text-4xl md:text-5xl">My Services</h2>
             <p className="max-w-2xl mx-auto text-center mt-5 mb-12">I am an experienced Frontend Developer with over 1 year of professional experience in this field.</p>
 
-            <div className="grid grid-cols-4 gap-6 my-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-10">
                 {
                     serviceData.map(({ icon, title, description, link }, index) => (
                         <div key={index} className="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-[#fcf4ff] hover:shadow-[4px_4px_0_#000] hover:translate-y-1 duration-500">

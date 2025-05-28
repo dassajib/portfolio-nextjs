@@ -3,11 +3,11 @@ import { assets, infoList, toolsData } from "../assets/assets"
 
 const About = () => {
     return (
-        <div id="about" className="w-full px-[12%] py-10 scroll-mt-20 mt-10">
+        <div id="about" className="w-full px-[12%] pt-32 md:py-10 scroll-mt-20">
             <h2 className="text-center mb-2 text-lg">Introduction</h2>
-            <h4 className="text-center text-5xl">About Me</h4>
+            <h4 className="text-center text-4xl md:text-5xl">About Me</h4>
 
-            <div className="w-full flex flex-col lg:flex-row items-center gap-20 my-20">
+            <div className="w-full flex flex-col lg:flex-row items-center gap-20 my-2 md:my-20">
                 <div className="w-64 sm:w-80 max-w-none rounded-3xl">
                     <Image className="w-full rounded-3xl" src={assets.my_about_pic} alt="my image" />
                 </div>
