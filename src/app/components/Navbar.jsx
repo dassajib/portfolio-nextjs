@@ -24,7 +24,7 @@ const Navbar = () => {
                 <Image src={assets.logo} alt="logo" className="w-32 cursor-pointer" />
             </a>
 
-            <ul className="hidden md:flex items-center gap-6 px-10 py-3 rounded-full lg:gap-8 bg-white/50 shadow-sm">
+            <ul className={`hidden md:flex items-center gap-6 px-10 py-3 rounded-full ${isScroll ? "" : "lg:gap-8 bg-white/50 shadow-sm"}`}>
                 {
                     navLinks.map(({ label, href }) => (
                         <li key={label}>

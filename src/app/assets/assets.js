@@ -86,7 +86,7 @@ export const navLinks = [{
     },
     {
         label: "Services",
-        href: "#top"
+        href: "#service"
     },
     {
         label: "My Work",
