@@ -1,14 +1,25 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Image from "next/image"
 import { assets, navLinks } from "../assets/assets"
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
+    const [isScroll, setIsScroll] = useState(false)
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (scrollY > 50) {
+                setIsScroll(true)
+            } else {
+                setIsScroll(false)
+            }
+        })
+    }, [])
 
     return (
-        <nav className="w-full fixed z-50 px-5 lg:px-8 xl:px-[8%] py-4 flex justify-between items-center">
+        <nav className={`w-full fixed z-50 px-5 lg:px-8 xl:px-[8%] py-4 flex justify-between items-center ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""}`}>
             <a href="#top">
                 <Image src={assets.logo} alt="logo" className="w-32 cursor-pointer" />
             </a>

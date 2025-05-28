@@ -1,4 +1,4 @@
-import user_image from './user-image.png';
+import my_about_pic from './my_about_pic.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -15,7 +15,7 @@ import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from './profile-img.png';
+import profile_img from './myPic.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -34,10 +34,10 @@ import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
-import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import right_arrow_bold_duser_imageark from './right-arrow-bold-dark.png';
 
 export const assets = {
-    user_image,
+    my_about_pic,
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -73,7 +73,7 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    // right_arrow_bold_dark
 };
 
 export const navLinks = [{
@@ -82,7 +82,7 @@ export const navLinks = [{
     },
     {
         label: "About Me",
-        href: "#top"
+        href: "#about"
     },
     {
         label: "Services",
