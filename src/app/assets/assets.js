@@ -98,53 +98,59 @@ export const navLinks = [{
     },
 ];
 
-export const workData = [{
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+export const workData = [
+    {
+        title: 'MovieHub',
+        description: 'Web Application',
+        bgImage: '/movie-hub.png',
+        link: 'https://movixapppp.netlify.app/movies'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Real Estate',
+        description: 'Web Application',
+        bgImage: '/real-estate.png',
+        link: 'https://683866e547c3916480dfd692--comfy-pixie-d54e96.netlify.app/'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Food App',
+        description: 'Web Application',
+        bgImage: '/food-app.png',
+        link: 'https://idyllic-ganache-639f56.netlify.app/'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Ridge Street',
+        description: 'Web Application',
+        bgImage: '/ridge_street.png',
+        link: 'https://ridge-street.netlify.app/'
     },
 ]
 
-export const serviceData = [{
+export const serviceData = [
+    {
         icon: assets.web_icon,
-        title: 'Web design',
-        description: 'Web development is the process of building, programming...',
+        title: 'Frontend Web Development',
+        description: 'Building responsive, high-performance web applications using React.js, Next.js, TypeScript, Tailwind CSS, and shadcn/ui. Skilled in implementing state management with Zustand, data fetching with React Query, and integrating RESTful APIs.',
         link: ''
     },
     {
-        icon: assets.mobile_icon,
-        title: 'Mobile app',
-        description: 'Mobile app development involves creating software for mobile devices...',
+        icon: assets.web_icon,
+        title: 'Responsive & Mobile-First Design',
+        description: 'Creating fully responsive, mobile-friendly UIs that adapt seamlessly across devices. Experienced in optimizing performance, accessibility, and cross-browser compatibility.',
         link: ''
     },
     {
-        icon: assets.ui_icon,
-        title: 'UI/UX design',
-        description: 'UI/UX design focuses on creating a seamless user experience...',
+        icon: assets.web_icon,
+        title: 'UI/UX Implementation',
+        description: 'Transforming modern UI/UX designs into pixel-perfect, interactive user interfaces using Tailwind CSS, shadcn/ui, and reusable component-based architecture.',
         link: ''
     },
     {
-        icon: assets.graphics_icon,
-        title: 'Graphics design',
-        description: 'Creative design solutions to enhance visual communication...',
+        icon: assets.web_icon,
+        title: 'API Integration & Data Handling',
+        description: 'Efficiently connecting frontends with RESTful APIs, managing server state with React Query, and ensuring smooth data flow and error handling for a seamless user experience.',
         link: ''
     },
-]
+];
 
 export const infoList = [{
         icon: assets.code_icon,

@@ -37,15 +37,22 @@ const Work = () => {
             <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
-                {
-                    workData.map((project, index) => (
-                        <div
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10"
+            >
+                {workData.map((project, index) => (
+                    <a
+                        key={index}
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <motion.div
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.9, delay: 0.6 }}
-                            key={index}
-                            className="relative aspect-square bg-no-repeat bg-cover bg-center rounded-lg cursor-pointer group" style={{ backgroundImage: `url(${project.bgImage})` }}>
+                            className="relative aspect-square bg-no-repeat bg-cover bg-center rounded-lg cursor-pointer group"
+                            style={{ backgroundImage: `url(${project.bgImage})` }}
+                        >
                             <div className="absolute bottom-5 right-1/2 bg-white w-10/12 rounded-md translate-x-1/2 px-3 py-2 duration-500 flex justify-between items-center group-hover:bottom-7">
                                 <div>
                                     <h2 className="text-md whitespace-nowrap font-semibold">{project.title}</h2>
@@ -55,10 +62,11 @@ const Work = () => {
                                     <Image src={assets.send_icon} alt="Send icon" className="w-5" />
                                 </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        </motion.div>
+                    </a>
+                ))}
             </motion.div>
+            
             <motion.a
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
